@@ -9,7 +9,6 @@ extends RigidBody3D
 @onready var ballScene = preload("res://scenes/ball.tscn")
 
 var ball
-
 var distance: float = 0.0
 var xDir: float = 1.0
 
@@ -74,5 +73,5 @@ func _on_body_shape_entered(_body_rid: RID, body: Node, _body_shape_index: int, 
 
 # step 16: create the _hitByBall() function below here
 func _hitByBall() -> void:
-	points+= 1
-	%PointsLabel.text = str(points)
+	%PointsLabel.points+= 1
+	print(%PointsLabel)
