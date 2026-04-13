@@ -13,7 +13,7 @@ var distance: float = 0.0
 var xDir: float = 1.0
 
 # step 13: add a time variale
-var _timer
+var _timer: float
 
 
 # step 4: uncomment the function below
@@ -73,5 +73,5 @@ func _on_body_shape_entered(_body_rid: RID, body: Node, _body_shape_index: int, 
 
 # step 16: create the _hitByBall() function below here
 func _hitByBall() -> void:
-	%PointsLabel.points+= 1
-	print(%PointsLabel)
+	%Player.points+= 1
+	%PointsLabel.text = str(%Player.points)
