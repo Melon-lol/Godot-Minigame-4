@@ -1,5 +1,5 @@
 class_name Ball
-extends MeshInstance3D
+extends RigidBody3D
 
 @export var hold_position: Vector3
 var on_ground: bool = true

@@ -42,7 +42,7 @@ func _physics_process(delta: float) -> void:
 	_timer+= delta
 	
 	if _timer > throwFrequency:
-		_throw()
+		ball._throw()
 		_timer = 0
 
 func _throw_ball() -> void:
