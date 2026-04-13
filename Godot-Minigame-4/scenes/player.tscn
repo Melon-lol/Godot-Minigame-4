@@ -18,7 +18,8 @@ script = ExtResource("1_3vyb7")
 shape = SubResource("CapsuleShape3D_sgp6g")
 
 [node name="Ball" parent="." instance=ExtResource("2_g2els")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0345353, 0.26025307, -0.4768666)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8428205, 0.39703935, 0.06921801)
+hold_position = Vector3(0.843, 0.397, 0.069)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_g2els")
