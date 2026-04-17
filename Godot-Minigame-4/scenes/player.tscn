@@ -13,13 +13,13 @@ albedo_color = Color(0.31171086, 0.57065874, 0.9465762, 1)
 [node name="Player" type="CharacterBody3D"]
 collision_mask = 14
 script = ExtResource("1_3vyb7")
+throwPower = 20.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_sgp6g")
 
 [node name="Ball" parent="." instance=ExtResource("2_g2els")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8428205, 0.39703935, 0.06921801)
-hold_position = Vector3(0.843, 0.397, 0.069)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0800022, 0.39703935, 0.06921801)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_g2els")
